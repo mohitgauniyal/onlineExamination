@@ -1,0 +1,1 @@
+<p>&copy;&nbsp;Copyright&nbsp;<?php echo date(Y);?></p>
