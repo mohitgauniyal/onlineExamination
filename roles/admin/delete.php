@@ -7,4 +7,4 @@ $question_number=$_GET['question_number'];
 $query="DELETE from $course WHERE question_number=$question_number";
 mysql_query($query);
 mysql_close();
-header('Location:index.php');
+header('Location:index.php?delete=true');

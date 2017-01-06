@@ -34,7 +34,7 @@ if (isset($_POST['add'])) {
     if (count($errors) == 0) {
         $query = "insert into $course values($question_number,'$question','$a','$b','$c','$d','$correct_answer')";
         mysql_query($query);
-        header('Location:index.php');
+        header('Location:index.php?added=true');
     }
 }
 ?>
@@ -103,12 +103,12 @@ if (isset($_POST['add'])) {
                     <input class="w3-input w3-border" name="d" type="text"></p>
 
                 <p>      
-                    <label class="w3-text-blue"><b>Correct Answer</b></label>
+                    <label class="w3-text-blue"><b>Correct Option</b></label>
                     <input class="w3-input w3-border" name="correct_answer" type="text"></p>
 
                 <p>      
                     <button class="w3-btn w3-blue" name="add">Add</button>
-                    <button class="w3-btn w3-blue"onclick="history.go(-1)">Cancel</button>
+                    <input  class="w3-btn w3-blue" type="button" value="Cancel" onclick="history.go(-1)" />
 
                 </p>
 

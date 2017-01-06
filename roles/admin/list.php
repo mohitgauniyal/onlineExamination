@@ -6,7 +6,8 @@ mysql_select_db('subjects') or die("Can't connect to the database.");
 $query = "select * from $course";
 $result = mysql_query($query);
 ?>
-<table style="text-align: left;">
+<div class="w3-responsive">
+<table style="text-align: left;" class="w3-table w3-table-all">
         <thead>
             <tr style="background-color: silver;">
                 <th>Question Number</th>
@@ -15,7 +16,7 @@ $result = mysql_query($query);
                 <th>Option B</th>
                 <th>Option C</th>
                 <th>Option D</th>
-                <th>Correct Answer</th>
+                <th>Correct Option</th>
                 <th></th>
                 <th></th>
             </tr>
@@ -31,7 +32,7 @@ $result = mysql_query($query);
                 <td><?php echo $row['b']; ?></td>
                 <td><?php echo $row['c']; ?></td>
                 <td><?php echo $row['d']; ?></td>
-                <td><?php echo $row['correct_answer']; ?></td>
+                <td><?php echo strtoupper($row['correct_answer']); ?></td>
                 <td><a title="Edit" href="edit.php?course=<?php echo $course;?>&question_number=<?php echo $row['question_number'];?>"><img src="../../images/edit.png"></a></td>
                 <td><a  title="Delete" onclick="delete();"onclick="return confirm('This record will be deleted.')"href="delete.php?course=<?php echo $course;?>&question_number=<?php echo $row['question_number'];?>"><img src="../../images/drop.png"></a></td>
                 <td></td>
@@ -39,4 +40,5 @@ $result = mysql_query($query);
             <?php } ?>
         </tbody>
     </table>
+    </div>
 <h3><a style="font-size: 20px; color: #00bcd4;"href="new_question.php?course=<?php echo $course;?>">Add new Question</a></h3>

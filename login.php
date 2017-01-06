@@ -71,8 +71,8 @@ if (isset($_POST['submit'])) {
         </nav>
         <section style="background-color:white;">
             <form action="login.php" method="POST" style="margin:20px;">
-                Username : <input value="mohitgauniyal"placeholder="Username" name="username"class="w3-input w3-border w3-animate-input" type="text" style="width:30%">
-                Password : <input value="123456"placeholder="Password" name="password" class="w3-input w3-border w3-animate-input" type="password" style="width:30%">
+                Username : <input placeholder="Username" name="username"class="w3-input w3-border w3-animate-input" type="text" style="width:30%">
+                Password : <input placeholder="Password" name="password" class="w3-input w3-border w3-animate-input" type="password" style="width:30%">
                 <button class="nbutton nbutton2" name="submit">Login</button>
             </form>
             <?php if($status==1) {?>

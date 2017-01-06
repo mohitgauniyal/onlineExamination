@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
         <link rel="stylesheet" href="../../styles/styles.css">
         <link rel="stylesheet" href="../../styles/w3.css">
         <script>
-            
+
         </script>
         <style>
             input.accordion {
@@ -141,10 +141,10 @@ if (isset($_POST['submit'])) {
 
                                 <p><?php echo $row[$i]['question'] ?></p>
 
-                                <p>a).<input type="radio" name="<?php echo $i; ?>" value="<?php echo $row[$i]['a'] ?>"><?php echo $row[$i]['a'] ?></p>
-                                <p>b).<input type="radio" name="<?php echo $i; ?>" value="<?php echo $row[$i]['b'] ?>"><?php echo $row[$i]['b'] ?></p>
-                                <p>c).<input type="radio" name="<?php echo $i; ?>" va lue="<?php echo $row[$i]['c'] ?>"><?php echo $row[$i]['c'] ?></p>
-                                <p>d).<input type="radio" name="<?php echo $i; ?>" value="<?php echo $row[$i]['d'] ?>"><?php echo $row[$i]['d'] ?></p>
+                                <p>a).<input type="radio" name="<?php echo $i; ?>" value="a"><?php echo $row[$i]['a'] ?></p>
+                                <p>b).<input type="radio" name="<?php echo $i; ?>" value="b"><?php echo $row[$i]['b'] ?></p>
+                                <p>c).<input type="radio" name="<?php echo $i; ?>" value="c"><?php echo $row[$i]['c'] ?></p>
+                                <p>d).<input type="radio" name="<?php echo $i; ?>" value="d"><?php echo $row[$i]['d'] ?></p>
 
                             </div>
 
@@ -169,7 +169,8 @@ if (isset($_POST['submit'])) {
                     $row = mysql_fetch_assoc($result);
                     //print_r($row);
                     echo '<h3>Q).' . $row['question_number'] . '&nbsp' . $row['question'] . '</h3>';
-                    echo 'You selected : ' . $selected[$i] . '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp' . 'Correct answer : ' . $row['correct_answer'];
+
+                    echo 'You selected : ' . $row[$selected[$i]] . '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp' . 'Correct answer : ' . $row[$row['correct_answer']];
                 }
                 ?>
             <?php } ?>

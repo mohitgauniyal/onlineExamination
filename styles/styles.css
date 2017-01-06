@@ -70,3 +70,10 @@ footer:hover
 {
     color:#2196F3;
 }
+
+.contact td
+{
+text-align:left;
+font-size:1.2em;
+font-style:none;
+}

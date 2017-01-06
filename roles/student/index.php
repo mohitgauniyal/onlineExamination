@@ -80,7 +80,7 @@ $row = mysql_fetch_assoc($result);
             <h2 style="color:blue; font-family: serif;">Instructions&nbsp;:</h2>
             <ul>
                 <li>You'll be given fix time to answer MCQs.</li>
-                <li>You may Submit your answers earlier by clicking upon "Save and Submit" button situated at the last question</li>
+                <li>You may Submit your answers earlier by clicking upon "Submit" button.</li>
                 <li>You can move to next or previous question to reselect your answer.</li>
             </ul>
            <?php

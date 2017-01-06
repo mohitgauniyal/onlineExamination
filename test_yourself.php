@@ -59,10 +59,13 @@ function make_name($name) {
         <nav>
             <?php require_once 'includes/guest/nav.inc.php'; ?>
         </nav>
-        <section>
-            <img  style="float:right; margin: 15px;" src="images/pic06.jpg" height="150px" width="150px" alt="Logo img.">
-            <p style="margin: 15px;">Computer programming (often shortened to programming) is a process that leads from an original formulation of a computing problem to executable computer programs. Programming involves activities such as analysis, developing understanding, generating algorithms, verification of requirements of algorithms including their correctness and resources consumption, and implementation (commonly referred to as coding) of algorithms in a target programming language. Source code is written in one or more programming languages. The purpose of programming is to find a sequence of instructions that will automate performing a specific task or solving a given problem. The process of programming thus often requires expertise in many different subjects, including knowledge of the application domain, specialized algorithms and formal logic. Related tasks include testing, debugging, and maintaining the source code, implementation of the build system, and management of derived artifacts such as machine code of computer programs. These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation, or coding reserved for the actual writing of source code. Software engineering combines engineering techniques with software development practices.</p>
-            <h1 style="color:green;">Go and Test Yourselves&nbsp;-- </h1>
+        <section style="background-color: transparent;">
+            <img  style="float:right; margin: 15px;" src="images/A (122).jpg" height="200px" width="250px" alt="Logo img.">
+            <p style="margin: 15px;">
+                This is an Online examination portal for the students of Computer field. We have provided several MCQ's in different subjects through which you could improve your basic knowledge of these particular subjects, You'll be given fix time to answer question and after that time the answers will get automatically submited. This is a feature through which you can improve your time management abilities.
+            </p>
+            <p class="success">Do give us the feedback about the changes and improvements that you'd like to see in this Web Portal.</p>
+            <h3 style="color:blueviolet;">Go and Test Yourselves&nbsp;-- </h3>
           </section>
         <footer>
             <?php require_once 'includes/guest/footer.inc.php'; ?>

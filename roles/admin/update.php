@@ -12,5 +12,5 @@ $d=$_POST['d'];
 $correct_answer=$_POST['correct_answer'];
 $query="update $course set question='$question',a='$a',b='$b',c='$c',d='$d',correct_answer='$correct_answer' where question_number=$question_number";
 mysql_query($query);
-header('Location:index.php');
+header('Location:index.php?update=true');
         

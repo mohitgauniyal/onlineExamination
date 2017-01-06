@@ -3,8 +3,13 @@ require_once 'secure.inc.php';
 require_once '../../includes/db.inc.php';
 $status=0;
 $username=$_SESSION['username'];
-$query="select * from history where username='$username' order by time";
+$query="select * from history where username='$username' order by date desc";
 $result=  mysql_query($query);
+function make_name($name) {
+    $new_name = ucfirst(str_replace('_', ' ', $name));
+    return $new_name;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,7 +46,7 @@ $result=  mysql_query($query);
             <tr>
                 <td><?php echo $t; ?></td>
                 <td><?php echo $row['time']; ?></td>
-                <td><?php echo $row['subject']; ?></td>
+                <td><?php echo make_name($row['subject']); ?></td>
                 <td><?php echo $row['num_correct_ans']; ?></td>
                 <td><?php echo $row['num_qsn']; ?></td>   
                 <td><a href="delete.php?time=<?php echo $row['time']; ?>"><img src="../../images/drop.png" alt=""/></a></td>
