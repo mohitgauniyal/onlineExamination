@@ -28,7 +28,7 @@
 }
 
 .nbutton2:hover {
-    background-color: #008CBA;
+    background-color: #008CBA; /* Cyan */
     color: white;
 }
 
