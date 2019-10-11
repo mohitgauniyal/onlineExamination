@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
             <h2 class="error">Wrong username or password.</h2>
             <?php } ?>
             <hr>
-            <a style="text-decoration:none;" href="forgot_password.php"><h5 style="color:pink;">Forgot password ?</h5></a>
+            <a style="text-decoration:none;" href="forgot_password.php"><h5 style="color:red;">Forgot password ?</h5></a>
         </section>
         <footer>
             <?php require_once 'includes/guest/footer.inc.php'; ?>
