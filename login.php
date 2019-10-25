@@ -3,7 +3,7 @@ $status = 0;
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = sha1($_POST['password']);
-    $query = "select * from users where username='$username' and password='$password'";
+    $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     require_once 'includes/db.inc.php';
     $result = mysql_query($query);
     if (mysql_num_rows($result)==1) {
