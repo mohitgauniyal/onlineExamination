@@ -57,10 +57,6 @@ $row = mysql_fetch_assoc($result);
                 padding-right: 25px;                
             }
 
-            .button:hover span:after {
-                opacity: 1;
-                right: 0;
-            }
 
         </style>
         <title></title>
