@@ -111,28 +111,7 @@ if (isset($_POST['register'])) {
         $template = 2;
     }
 
-/*
-    require_once('includes/class.phpmailer.php');
 
-    $mailer = new PHPMailer(true);
-
-    $mailer->Sender = '';
-    $mailer->SetFrom('', '');
-    $mailer->AddAddress($email);
-    $mailer->Subject = 'Registration';
-    $mailer->MsgHTML('<p>Registration Successful!</p>' .
-            '<p>Verification Link <a href="http://x.com/verify.php?username=' . $username . '&code=' . $verification_code . '">Click here to verify</a></p>');
-
-    // Set up our connection information.
-    $mailer->IsSMTP();
-    $mailer->SMTPAuth = true;
-    $mailer->SMTPSecure = 'ssl';
-    $mailer->Port = 465;
-    $mailer->Host = 'smtp.gmail.com';
-    $mailer->Username = '';
-    $mailer->Password = '';
-
-    $mailer->Send();*/
 }
 ?>
 <!DOCTYPE html>
