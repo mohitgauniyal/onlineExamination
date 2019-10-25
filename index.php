@@ -27,10 +27,6 @@
     border: 2px solid #008CBA;
 }
 
-.nbutton2:hover {
-    background-color: #008CBA; /* Cyan */
-    color: white;
-}
 
 
         </style>
