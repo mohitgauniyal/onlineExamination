@@ -14,7 +14,7 @@
         </nav>
         <section style="background-color: transparent;">
             <h2>Designed and Developed by : </h2>
-<p style="margin-left:15px;">Mohit Gauniyal</p>
+<p style="margin-left:15px;">[NAME]</p>
 <h2>Technologies used : </h2>
 <h3 class="success">Front-end : </h3>
 <p style="margin-left:15px;">HTML5,&nbsp;&nbsp;CSS3 (<strong>Framework:</strong> W3CSS,&nbsp;Bootstrap )&nbsp;,&nbsp;&nbsp;JavaScript</p>
