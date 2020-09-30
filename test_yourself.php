@@ -72,39 +72,3 @@ function make_name($name) {
         </footer>
     </body>
 </html>
-
-
-
-
-
-
-<!--
-
-  <?php/*
-            mysql_connect('localhost', 'root', '') or die("Can't connect to server");
-            mysql_select_db('subjects') or die("Can't connect to server");
-            $query = "show tables";
-            $result = mysql_query($query);
-            $loop_counter = 0;
-            ?>
-            <table>
-                <tr>
-                    <?php
-                    while ($row = mysql_fetch_array($result)) {
-                        $loop_counter++;
-                        ?>
-                    <div>
-                        <?php $name = make_name($row[0]); ?>
-                        <td><a href="roles/student/subject.php?subject=<?php echo $row[0]; ?>"><button class="button"><span><?php echo $name; ?></span></button></a></td>
-                    <?php
-                    if ($loop_counter == 4) {
-                        echo '</tr>';
-                        $loop_counter = 0;
-                    }
-                    echo '</div>';
-                }
-                ?>
-                    
-            </table>
-        
--->*/
