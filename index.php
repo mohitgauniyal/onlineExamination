@@ -34,7 +34,7 @@
 
 
         </style>
-        <title></title>
+        <title>Online Examination</title>
     </head>
     <body>
         <div>
