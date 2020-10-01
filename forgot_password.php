@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     $result = mysql_query($query);
     if (mysql_num_rows($result) == 1) {
         $template = 3;
-        $str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        $str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
         $str = str_shuffle($str);
         $password = substr($str, 0, 8);
         $data = sha1($password);
