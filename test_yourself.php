@@ -14,11 +14,7 @@ function make_name($name) {
         <title></title>
 
         <style>
-            .button {
-                border-radius: 4px;
-                background-color: blueviolet;
-                border: none;
-                color: #FFFFFF;
+            .button {               
                 text-align: center;
                 font-size: 28px;
                 padding: 20px;
