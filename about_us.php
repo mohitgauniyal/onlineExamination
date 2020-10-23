@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles/w3.css">
         <link rel="stylesheet" href="styles/styles.css">
 
-        <title></title>
+        <title>about</title>
     </head>
     <body>
         <nav>
